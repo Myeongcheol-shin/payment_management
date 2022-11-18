@@ -1,0 +1,94 @@
+[
+  {
+    "name": "netflix",
+    "korean": "넷플릭스"
+  },
+  {
+    "name": "watcha",
+    "korean": "왓챠"
+  },
+  {
+    "name": "coupang",
+    "korean": "쿠팡"
+  },
+  {
+    "name": "disney",
+    "korean": "디즈니+"
+  },
+  {
+    "name": "wavve",
+    "korean": "웨이브"
+  },
+  {
+    "name": "tving",
+    "korean": "티빙"
+  },
+  {
+    "name": "youtube",
+    "korean": "유튜브 프리미엄"
+  },
+  {
+    "name": "amazon",
+    "korean": "아마존 프라임"
+  },
+  {
+    "name": "apple",
+    "korean": "애플 티비+"
+  },
+  {
+    "name": "seezn",
+    "korean": "씨즌"
+  },
+  {
+    "name": "laftel",
+    "korean": "라프텔"
+  },
+  {
+    "name": "millie",
+    "korean": "밀리의 서재"
+  },
+  {
+    "name" : "bugs",
+    "korean" : "벅스"
+  },
+  {
+    "name" : "genie",
+    "korean" : "지니"
+  },
+  {
+    "name" : "melon",
+    "korean" : "멜론"
+  },
+  {
+    "name" : "twitch",
+    "korean" : "트위치 구독"
+  },
+  {
+    "name": "kakaotalk",
+    "korean": "카카오 이모티콘+"
+  },
+  {
+    "name" : "yogipass",
+    "korean" : "요기패스"
+  },
+  {
+    "name" : "ujupass",
+    "korean" :"우주패스"
+  },
+  {
+    "name" : "hbomax",
+    "korean" : "HBO MAX"
+  },
+  {
+    "name" : "naverplus",
+    "korean" : "네이버 플러스"
+  },
+  {
+    "name" : "nintendo",
+    "korean" : "닌텐도 스위치 온라인"
+  },
+  {
+    "name" : "etc",
+    "korean" : "기타"
+  }
+]

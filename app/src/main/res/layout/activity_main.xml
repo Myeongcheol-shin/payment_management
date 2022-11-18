@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/AlarmButton"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/icon_alarm_off" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/manageButton"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/icon_list_white" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/paymentList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="7.5dp"
+        android:background="@drawable/background_list"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="내 정기결제 목록"
+            android:textColor="@color/white" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recurringView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/paymentDueDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="7.5dp"
+        android:layout_weight="3"
+        android:background="@drawable/background_list"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="이번달 결제 예정"
+            android:textColor="@color/white" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/duedateView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/paymentSum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_weight="1"
+        android:background="@drawable/background_list"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="이번달 결제 금액"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="총 결제금액"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:id="@+id/priceText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="100만원"
+                    android:textColor="@color/yellow"
+                    android:textSize="30dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="남은 결제금액"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:id="@+id/pricedueText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="100만원"
+                    android:textColor="@color/yellow"
+                    android:textSize="30dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
